@@ -1,20 +1,22 @@
-import React,{Component} from 'react';
-import { View , Button ,TextInput } from 'react-native'
+import React,{ Component } from 'react';
+import { StyleSheet, View , Button ,TextInput } from 'react-native'
 
 class Search extends Component {
     render (){
         return(
-            <View style ={{marginTop:20}}>
+            <View style ={{flex : 1 , marginTop:20}}>
                 <TextInput style={styles.textinputs} placeholder="Titre"/>
                 <Button title="Rechercher" onPress={()=>{}} />
             </View>
         )
     }
 }
-const styles  = {
+const styles  =StyleSheet.create( {
     textinputs:{
+        flex :1,
         height: 50,
         backgroundColor: 'red'
     }
-}
+})
+
 export default Search;
